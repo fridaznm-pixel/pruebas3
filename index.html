@@ -1,0 +1,40 @@
+<script>
+  /linea que permite escribir/
+  document.write('Hola');
+  document.write('<br>');
+
+  document.write('Este es mi primer programa con javascript en este curso');
+  document.write('<br>');
+  document.write('<br>');
+  document.write("hagamos operaciones");
+  document.write('<br>');
+  document.write('<br>');
+
+  /creo variables/
+  var basetriangulo;
+  var alturatriangulo;
+  var ladocuadrado;
+
+  /pido datos en un dialogo del explorador/
+  basetriangulo = prompt('dame la base del triangulo:','');
+  alturatriangulo = prompt('dame la altura del triangulo','');
+  ladocuadrado = prompt('dame el lado del cuadrado','');
+
+  /convierto valores a valores numericos/
+  basetriangulo = parseFloat(basetriangulo);
+  alturatriangulo = parseFloat(alturatriangulo);
+  ladocuadrado = parseFloat(ladocuadrado);
+
+  /hago operaciones/
+  var perimetrocuadrado = ladocuadrado * 4;
+  var areatriangulo = (basetriangulo * alturatriangulo) / 2;
+
+  /escribo resultados/
+  document.write('El area del triangulo es: ');
+  document.write(areatriangulo);
+  document.write('<br><br>');
+  
+  document.write('El perimetro del cuadrado es: ');
+  document.write(perimetrocuadrado);
+
+</script>
